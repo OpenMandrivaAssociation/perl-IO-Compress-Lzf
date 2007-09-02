@@ -1,6 +1,6 @@
 %define	module	IO-Compress-Lzf
 %define	name	perl-%{module}
-%define	version	2.005
+%define	version	2.006
 %define	release	%mkrel 1
 
 Name:		%{name}
@@ -9,8 +9,8 @@ Release:	%{release}
 Summary:	IO::Compress::Lzf - Write lzf files/buffers
 License:	GPL or Artistic
 Group:		Development/Perl
-Source0:	http://search.cpan.org/CPAN/modules/by-module/Compress/%{module}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{module}/
+Source0:    http://cpan.enstimac.fr/authors/id/P/PM/PMQS/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildRequires: perl(IO::Compress::Base) >= %version
