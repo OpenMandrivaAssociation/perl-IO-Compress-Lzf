@@ -12,7 +12,6 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
 Source0:    http://cpan.enstimac.fr/authors/id/P/PM/PMQS/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildRequires: perl(IO::Compress::Base) >= %version
 BuildRequires: perl(Compress::LZF)
 BuildArch: noarch
