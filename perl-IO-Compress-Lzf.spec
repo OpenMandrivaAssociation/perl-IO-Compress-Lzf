@@ -1,6 +1,6 @@
 %define	module	IO-Compress-Lzf
 %define	name	perl-%{module}
-%define	version	2.009
+%define	version	2.010
 %define	release	%mkrel 1
 
 Name:		%{name}
