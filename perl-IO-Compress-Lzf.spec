@@ -1,6 +1,6 @@
 %define	module	IO-Compress-Lzf
 %define	name	perl-%{module}
-%define	version	2.015
+%define	version	2.019
 %define	release	%mkrel 1
 
 Name:		%{name}
@@ -10,12 +10,11 @@ Summary:	IO::Compress::Lzf - Write lzf files/buffers
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}/
-Source0:    http://cpan.enstimac.fr/authors/id/P/PM/PMQS/%{module}-%{version}.tar.gz
-BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Source:     http://www.cpan.org/modules/by-module/IO/%{module}-%{version}.tar.gz
 BuildRequires: perl(IO::Compress::Base) >= %version
 BuildRequires: perl(Compress::LZF)
 BuildArch: noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module provides a Perl interface that allows writing lzf compressed data
