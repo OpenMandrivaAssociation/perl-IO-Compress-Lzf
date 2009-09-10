@@ -1,20 +1,21 @@
-%define	module	IO-Compress-Lzf
-%define	name	perl-%{module}
-%define	version	2.020
-%define	release	%mkrel 1
+%define	upstream_name	 IO-Compress-Lzf
+%define	upstream_version 2.021
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	IO::Compress::Lzf - Write lzf files/buffers
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}/
-Source:     http://www.cpan.org/modules/by-module/IO/%{module}-%{version}.tar.gz
-BuildRequires: perl(IO::Compress::Base) >= %version
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:    http://www.cpan.org/modules/by-module/IO/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Compress::LZF)
+BuildRequires: perl(IO::Compress::Base) >= %{version}
+
 BuildArch: noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module provides a Perl interface that allows writing lzf compressed data
@@ -25,7 +26,7 @@ different file format. The lzf file format used here is the same as the lzf
 command-line utility that ships with the lzf library.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -46,5 +47,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{_mandir}/*/*
 %{perl_vendorlib}/*
-
-
