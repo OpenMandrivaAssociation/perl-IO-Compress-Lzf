@@ -1,9 +1,9 @@
 %define	upstream_name	 IO-Compress-Lzf
-%define upstream_version 2.037
+%define upstream_version 2.062
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	IO::Compress::Lzf - Write lzf files/buffers
 License:	GPL+ or Artistic

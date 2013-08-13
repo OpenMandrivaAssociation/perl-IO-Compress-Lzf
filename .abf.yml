@@ -1,2 +1,4 @@
+removed_sources:
+  IO-Compress-Lzf-2.037.tar.gz: 812bc3d648e9b5471cc1f907a4e1ad7f2a1ece9a
 sources:
-  "IO-Compress-Lzf-2.037.tar.gz": 812bc3d648e9b5471cc1f907a4e1ad7f2a1ece9a
+  IO-Compress-Lzf-2.062.tar.gz: d6cafbe39ff71b29705f037a79fd874c5d4ca748
