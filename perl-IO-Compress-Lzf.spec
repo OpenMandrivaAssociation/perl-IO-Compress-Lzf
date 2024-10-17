@@ -8,7 +8,7 @@ Release:	3
 Summary:	IO::Compress::Lzf - Write lzf files/buffers
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:    http://www.cpan.org/modules/by-module/IO/IO-Compress-Lzf-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
